@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Magnitudes Físicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo macondo.jpg" alt="Escudo de la Institución Etnoeducativa Departamental Macondo" class="escudo" />
+      <h1>Calculadora de Magnitudes Físicas</h1>
+      <h2>Nombre del instituto: macondo </h2>
+    </header>
+    <main>
+      <form id="calculadora">
+        <label for="tipo-calculo">Selecciona el cálculo:</label>
+        <select id="tipo-calculo" onchange="mostrarFormulario()">
+          <option value="">-- Selecciona --</option>
+          <option value="velocidad">Velocidad (v = d / t)</option>
+          <option value="aceleracion">Aceleración (a = Δv / Δt)</option>
+          <option value="fuerza">Fuerza (F = m · a)</option>
+          <option value="trabajo">Trabajo (W = F · d · cos(θ))</option>
+          <option value="energia-cinetica">Energía Cinética (K = ½ · m · v²)</option>
+          <option value="energia-potencial">Energía Potencial (U = m · g · h)</option>
+          <option value="densidad">Densidad (ρ = m / V)</option>
+          <option value="presion">Presión (P = F / A)</option>
+          <option value="carga">Carga Eléctrica (q = I · t)</option>
+          <option value="ohm">Ley de Ohm (V = I · R)</option>
+        </select>
+
+        <div id="formulario"></div>
+      </form>
+    </main>
+  </div>
+  <script src="funciones.js"></script>
+</body>
+</html>
