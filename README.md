@@ -21,6 +21,6 @@ este proyecto consiste en una calculadora web interactiva desarrollada con HTML,
 
 ## tecnología utilizada 
 
--HTML5
+-HTML
 -CSS
 -JS
